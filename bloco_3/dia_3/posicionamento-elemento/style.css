@@ -1,0 +1,25 @@
+#mario-e-goomba img {
+    width: 300px;
+    display: block;
+}
+
+#fala-bowser {
+    float: left;
+    position: relative; 
+}
+
+.baloon {
+    overflow-y: auto;
+    float: left;
+    bottom: -500px;
+}
+
+.word {
+    position: absolute;
+    left: 70px;
+    top: 50px;
+}
+
+.bowser {
+    width: 500px;
+}
