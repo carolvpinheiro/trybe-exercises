@@ -1,0 +1,57 @@
+div:hover {
+    border-style: solid;
+    border-radius: 30px;
+    border-color: black;
+}
+
+div#primaria {
+    background-color: red;
+}
+
+div#secundaria {
+    background-color: green;
+}
+
+div#complementar {
+    color: yellow;
+    background-color: purple;
+}
+
+div#escura {
+    background-color: darkblue;
+}
+
+div#clara {
+    background-color: lightcoral;
+    font-size: 2em;
+}
+
+div {
+    text-align: center;
+    padding: 10px;
+}
+
+h3#primaria {
+    font-family: monospace;
+}
+
+h3#secundaria:active {
+    color: lightgreen;
+}
+
+h3#complementar:hover {
+    background-color: yellow;
+    color: purple;
+}
+
+h3#escura {
+    color: white;
+}
+
+h3#clara:hover {
+    color: lightsalmon;
+}
+
+h3#secundaria, h3#escura {
+    font-style: italic;
+}
