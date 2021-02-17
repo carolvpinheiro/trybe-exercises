@@ -1,0 +1,64 @@
+ol {
+    background-color: yellow;
+}
+
+li.par {
+    background-color: greenyellow;
+}
+
+li.primo {
+    text-transform: lowercase;
+}
+
+.header{
+    color: red;
+}
+
+.header em {
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 1px;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+div {
+    color: lightseagreen;
+}
+
+.java {
+    background-color: lightpink;
+}
+
+li#stack:hover a {
+    font-weight: bold;
+    color: orange;
+}
+
+li#w3:hover a {
+    font-weight: bold;
+    color: green;
+}
+
+li#mozilla:hover a {
+    font-weight: bold;
+    color: black;
+}
+
+li#devdocs:hover a {
+    font-weight: bold;
+    color: yellow;
+}
+
+li#trybe:hover a {
+    font-weight: bold;
+    color: darkgreen
+}
+
