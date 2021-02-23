@@ -31,3 +31,23 @@ nav ul li {
 #home, #sobre, #contato {
     color: teal;    
 }
+
+.article {
+    margin: 15px;
+}
+
+
+#intrigante {
+    width: 500px;
+}
+
+#classificacao {
+    width: 600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+}
