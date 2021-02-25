@@ -2,7 +2,7 @@ let peca;
 peca = 'DAMA';
 
 switch (peca) {
-    case ('DAMA'.toLowerCase()):
+    case ("DAMA".toLowerCase()):
         console.log("Executa todos os movimentos menos o movimento do cavalo");
         break;
 
@@ -10,19 +10,19 @@ switch (peca) {
         console.log("Movimenta uma casa pra frente, pra trás ou para um dos lados");
         break;
 
-    case ("peão"):
+    case ("PEÃO".toLowerCase()):
         console.log("Movimenta uma casa pra frente, pra trás ou para um dos lados");
         break;
     
-    case ("cavalo"):
+    case ("CAVALO".toLowerCase()):
         console.log("Movimento em L");
         break;
 
-    case ("bispo"):
+    case ("BISPO".toLowerCase()):
         console.log("Movimenta na diagonal");
         break;
 
-    case ("torre"):
+    case ("TORRE".toLowerCase()):
         console.log("Movimenta na vertical");
         break;
 
