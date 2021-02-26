@@ -15,4 +15,3 @@ if (oddNumbers > 0) {
 else {
     console.log("nenhum valor ímpar encontrado");
 }
-
