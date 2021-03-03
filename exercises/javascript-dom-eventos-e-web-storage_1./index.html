@@ -30,7 +30,7 @@
     </style>
   </head>
   <body>
-    <h1 class="title">Exercício 5.1 - JavaEscripito </h1>
+    <h1 class="title">Exercício 5.1 - JavaEscripito</h1>
     <div class="main-content">
       <div class="center-content">
         <p>Texto padrão do nosso site</p>
@@ -40,11 +40,6 @@
     </div>
     <script>
         /*
-        Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-        - document.getElementById()
-        - document.getElementsByClassName()
-        - document.getElementsByTagName()
- Crie uma função que mude a cor do quadrado vermelho para branco.
  Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
@@ -67,6 +62,13 @@
           colorToWhite.style.backgroundColor = whiteColor;
       }
       colorChangeToWhite("white");
+
+      function correctTitle() {
+          let correctTextTitle = document.getElementsByClassName("title")[0];
+          correctTextTitle.innerHTML = "Exercício 5.1 - JavaScript";
+      }
+      correctTitle();
+
     </script>
   </body>
 </html>
