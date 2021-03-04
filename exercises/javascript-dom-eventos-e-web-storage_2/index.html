@@ -68,7 +68,40 @@
       let centerContent = document.createElement('div');
       document.querySelector('.main-content').appendChild(centerContent);
       centerContent.className = 'center-content';
-      console.log(centerContent)
+
+      let paragraph = document.createElement('p');
+      document.querySelector('.center-content').appendChild(paragraph);
+      paragraph.innerText = 'Sou o lobo mau, au au'
+
+      let leftContent = document.createElement('div');
+      document.querySelector('.main-content').appendChild(leftContent);
+      leftContent.className = 'left-content';
+
+      let rightContent = document.createElement('div');
+      document.querySelector('.main-content').appendChild(rightContent);
+      rightContent.className = 'right-content';
+
+      let image = document.createElement('img');
+      document.querySelector('.left-content').appendChild(image);
+      image.className = 'small-image';
+      image.src = 'https://picsum.photos/200';
+
+      let list = document.createElement('ul');
+      document.querySelector('.right-content').appendChild(list);
+      function numberWrittenInFull() {
+        let numbersWritten = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        for (let index = 0; index < numbersWritten.length; index += 1) {
+          let listItem = document.createElement('li');
+          document.querySelector('ul').appendChild(listItem);
+          listItem.innerText += numbersWritten[index];
+        }  
+      }
+      numberWrittenInFull()
+
+      for (let index = 1; index <= 3; index += 1) {
+          let subtitle = document.createElement('h3');
+          document.querySelector('.main-content').appendChild(subtitle);
+      }
 
 
     </script>
