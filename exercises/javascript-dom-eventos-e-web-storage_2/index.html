@@ -60,6 +60,7 @@
       let title = document.createElement('h1');
       document.body.appendChild(title);
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      title.className = 'title';
 
       let mainContent = document.createElement('div');
       document.body.appendChild(mainContent);
@@ -98,10 +99,29 @@
       }
       numberWrittenInFull()
 
-      for (let index = 1; index <= 3; index += 1) {
+      function addSubtitle() {
+        let allTitlePlace = document.querySelectorAll('.main-content div');
+        for (let index = 0; index <= 2; index += 1) {
           let subtitle = document.createElement('h3');
-          document.querySelector('.main-content').appendChild(subtitle);
+          allTitlePlace[index].appendChild(subtitle);
+          subtitle.innerHTML = 'H3';
+          subtitle.className = 'description';
+        }
       }
+      addSubtitle();
+
+      function removeChildLettContent() {
+        let divParent = document.querySelector('.main-content');
+        let divChild = document.querySelector('.left-content');
+        divParent.removeChild(divChild);
+      }
+      removeChildLettContent();
+
+      document.querySelector('.right-content').style.margin = "auto";
+
+      let centerContentParent = document.querySelector('.center-content').parentElement;
+      centerContentParent.style.backgroundColor = 'black';
+
 
 
     </script>
