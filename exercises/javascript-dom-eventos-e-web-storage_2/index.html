@@ -60,6 +60,7 @@
       let title = document.createElement('h1');
       document.body.appendChild(title);
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      title.className = 'title';
 
       let mainContent = document.createElement('div');
       document.body.appendChild(mainContent);
@@ -94,6 +95,7 @@
           let listItem = document.createElement('li');
           document.querySelector('ul').appendChild(listItem);
           listItem.innerText += numbersWritten[index];
+          listItem.className = 'description';
         }  
       }
       numberWrittenInFull()
