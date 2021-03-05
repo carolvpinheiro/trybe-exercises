@@ -110,7 +110,18 @@
       }
       addSubtitle();
 
-      
+      function removeChildLettContent() {
+        let divParent = document.querySelector('.main-content');
+        let divChild = document.querySelector('.left-content');
+        divParent.removeChild(divChild);
+      }
+      removeChildLettContent();
+
+      document.querySelector('.right-content').style.margin = "auto";
+
+      let centerContentParent = document.querySelector('.center-content').parentElement;
+      centerContentParent.style.backgroundColor = 'black';
+
 
 
     </script>
