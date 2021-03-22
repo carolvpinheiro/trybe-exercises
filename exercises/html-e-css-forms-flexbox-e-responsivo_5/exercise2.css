@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+.ul-conteiner {
+  display: flex;
+  list-style: none;
+
+}
+
+@media screen and (min-width: 280px) {
+  aside , article {
+    margin: 10px;
+    text-align: justify;
+    font-size: 18px;
+  }
+ 
+  h2 {
+    padding-bottom: 10px;
+  }
+
+  p {
+    padding: 5px;
+    text-indent: 15px;
+  }
+ 
+  header {
+    display: flex;
+    background-color: rgb(197, 255, 236);
+    color: rgb(0, 3, 161);
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+  }
+  
+  header nav {
+    display: none;
+  }
+}
+
