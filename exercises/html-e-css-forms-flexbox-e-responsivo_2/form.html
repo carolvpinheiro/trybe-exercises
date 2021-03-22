@@ -5,15 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Currículo</title>
-    <link rel="stylesheet" href="dist/css/DatePickerX.min.css"> 
-    <script src="dist/js/DatePickerX.min.js"></script>
+        
     <link href="validation.min.css" rel="stylesheet"> 
     <script src="validation.min.js"></script>
-    <!--
-        https://github.com/AntonLapshin/popup-validation
+    
 
-        https://github.com/AlexKrupko/DatePickerX
-    -->
 </head>
 <body>
 
@@ -24,8 +20,10 @@
             <label for="name">Nome Completo</label>
             <input type="text" name="name" id="name" maxlength="40" required>
             <br>
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" maxlength="50" required>
+            <div> 
+              <label  for = "email"> Email: </label> 
+              <input  type = "email" id = "email" class = "validate" data-validate = "required, email" />
+            </div>  
             <br>
             <label for="cpf">CPF</label>
             <input type="text" name="cpf" id="cpf" maxlength="11" required>
@@ -60,10 +58,18 @@
             <label for="start-date" id="start-date">Data de Início</label>
             <button type="submit" id="submit">Enviar data</button>
 
+
+
         </fieldset>
 
     </form>
+    <script>
 
-    <script src="script.js"></script>
+    </script>
+
+    <style>
+
+
+    </style>
 </body>
 </html>
