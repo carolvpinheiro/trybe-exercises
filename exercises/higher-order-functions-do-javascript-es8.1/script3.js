@@ -2,7 +2,7 @@
 // A validação da resposta não deve ser case sensitive.
 // Deve ser possível chamar a HOF criada de forma encadeada (Ex: checarResposta('Gabarito')('Teste'))
 
-const checkAnswers = (rigthAnswers) => (answer) => rigthAnswers.toLowerCase() === answer.toLowerCase();
+const checkAnswers = (rightAnswers) => (answer) => rightAnswers.toLowerCase() === answer.toLowerCase();
 
 const answerFulana = checkAnswers('Corretamente')('CORRETAMENTE');
 console.log(answerFulana);
