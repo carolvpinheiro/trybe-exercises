@@ -20,7 +20,7 @@ const checkAnswers = (arrayRightAnswers, arrayStudentAnswers) => {
             counter += 0;
             console.log(counter)
         } else if (eachtRightAnswer !== eachStudentAnswers) {
-            counter += 0.5;
+            counter -= 0.5;
             console.log(counter)
         } 
     }

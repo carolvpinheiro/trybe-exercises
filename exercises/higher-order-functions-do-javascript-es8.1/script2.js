@@ -3,11 +3,10 @@
 const randomNumber = () => Math.floor(Math.random() * 5 +1);
 
 const sorteio = (num, check) => {
-    console.log(randomNumber());
-    if (num === check) {
+    if (num === check()) {
         return 'Parabéns, você ganhou!';
     }
     return 'Tente novamente';
 };
 
-console.log(sorteio(2, randomNumber()));
+console.log(sorteio(2, randomNumber));
