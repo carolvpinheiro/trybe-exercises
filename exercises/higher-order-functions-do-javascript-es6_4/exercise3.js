@@ -1,4 +1,4 @@
-// const assert = require('assert');
+const assert = require('assert');
 
 const books = [
   {
@@ -65,13 +65,13 @@ const books = [
 
 const expectedResult = 43;
 
+const sumAgeAuthores = (acc, book, index, array) => {
+  const sumAge = acc + (book.releaseYear - book.author.birthYear);
+  if (index === array.length -1) return sumAge / array.length;
+};
+
 function averageAge() {
-//   const getAge = (book) => (book.releaseYear - book.author.birthYear) / 2;
-  const findAverageAge = books.reduce((accumulator, book) => {
-    const getAverageAge = `${(book.releaseYear - book.author.birthYear) / 2}`;
-    return `${accumulator + getAverageAge}`;
-  }, 0);
-  return findAverageAge;  
+  return books.reduce(sumAgeAuthores, 0);
 }
-console.log(averageAge())
-// assert.strictEqual(averageAge(), expectedResult);
+
+assert.strictEqual(averageAge(), expectedResult);
