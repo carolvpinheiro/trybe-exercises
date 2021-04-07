@@ -8,9 +8,7 @@ const arrays = [
 ];
 
 function flatten() {
-  const singleMatrix = arrays.reduce((matrix, eachMatrix) => {
-    return matrix.concat(eachMatrix);
-  }, []);
+  const singleMatrix = arrays.reduce((matrix, eachMatrix) => matrix.concat(eachMatrix), []);
   return singleMatrix;
 }
 
