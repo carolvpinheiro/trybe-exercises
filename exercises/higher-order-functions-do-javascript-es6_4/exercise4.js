@@ -73,11 +73,14 @@ const expectedResult = {
   releaseYear: 1991,
 };
 
+// const biggestName = (acc, name) => acc.length > name.length ? acc : name;
+// const allNames = (arr) => arr.map((book) => book.name).reduce(biggestName, 0)
+
+
 function longestNamedBook() {
-  const findLongestNameBook = books.reduce((accumulator, book) => {
-      return (accumulator > books.length) ? accumulator : book.length;
-  }, 0);
-  return findLongestNameBook;
+  return books.reduce((acc, book) => {
+    if (acc.name.length > book.name.length) return acc;
+  });
 }
 
 assert.deepStrictEqual(longestNamedBook(), expectedResult);
