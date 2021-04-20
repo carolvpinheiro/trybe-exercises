@@ -14,8 +14,8 @@ describe('suns two values', () => {
     new Error('parameters must be numbers');
   });
 
-//   test('erro sum 4 + "5" = 9', => {
-//     expect(() => { sum(4, '5') }).toThrowError(new Error('parameters must be numbers'));
-//   });
+  test('erro sum 4 + "5" = 9', () => {
+    expect(() => sum(4, '5')).toThrowError('parameters must be numbers');
+  });
 
 });
